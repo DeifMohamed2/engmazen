@@ -123,8 +123,8 @@
                 <div class="col-12 text-center">
                   <input type="number" name="phone"  id="phone" 
                     placeholder="رقم هاتف الطالب" value="<%= formData.phone || '' %>" required>
-                    <h5 class="text-warning">ده الرقم الي هتعمل بيه تسجيل دخول</h5>
-                    <h5 class="text-warning"> لازم الرقم يكون عليه واتساب</h5>
+                    <h5 class="text" style="color: #7bbddb;">ده الرقم الي هتعمل بيه تسجيل دخول</h5>
+                    <h5 class="text"style="color: #7bbddb;"> لازم الرقم يكون عليه واتساب</h5>
                 </div> 
                 
          
@@ -198,7 +198,7 @@
                   </select>
                 </div>
                 <div class="col-12 text-center">
-                  <h4 class="text-warning  mt-2">بتحضر معانا فين ؟</h4>
+                  <h4 class="text  mt-2"style="color: #7bbddb;">بتحضر معانا فين ؟</h4>
                 </div>
                 <div class="col-12 text-center">
                   <select name="place" id="place" value="<%= formData.place || '' %>" required>
@@ -208,10 +208,10 @@
 
                   </select>
                 </div>
-                <div class="col-12 text-center d-none">
-                  <h4 class="text-warning  mt-2">  اختار انت عربي ولا لغات </h4>
+                <div class="col-12 text-center ">
+                  <h4 class="text  mt-2" style="color: #7bbddb;">  اختار انت عربي ولا لغات </h4>
                 </div>
-                <div class="col-12 text-center d-none">
+                <div class="col-12 text-center ">
                   <select name="ARorEN" id="place" value="<%= formData.ARorEN || '' %>" required>
                     <option selected value="AR"> انا عربي </option>
                     <option value="EN"> انا لغات </option>

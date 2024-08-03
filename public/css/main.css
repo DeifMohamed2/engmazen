@@ -15,10 +15,10 @@
 
 /* #eed311 */
 :root {
-  --color-primary: #fec900;
+  --color-primary: #7bbddb;
   --color-success: #00bf8e;
-  --color-warning: #f7c94b;
-  --color-danger: #fec900;
+  --color-warning: #89CFF0;
+  --color-danger: #89CFF0;
   --color-danger-variant: rgba(247, 88, 66, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.7);
@@ -358,7 +358,7 @@ header {
 .header__right-image  img{
   width: 20rem;
 
-  border-radius: 10%;
+  border-radius: 5%;
 }     
 .bub {
   width: 100px;
@@ -413,6 +413,36 @@ header {
 .bub.d {
   left: 1%;
   top: 40%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.e {
+  left: 10%;
+  top: 70%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.f {
+  left: 30%;
+  top: 74%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.g {
+  left: 10%;
+  top: 10%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.h {
+  left: 35%;
+  top: 13%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.k {
+  left: 60%;
+  top: 10%;
   
   animation: fadeInBottomLeft 2.2s ease ;
 }
@@ -864,10 +894,42 @@ footer ul li a:hover {
 
 /* ======================== MEDIA QUERIES (PHONES) ======================= */
 @media screen and (max-width: 800px) {
+
+.bub.e {
+  left: 10%;
+  top: 90%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.f {
+  left: 0%;
+  top: 42%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.g {
+  left: 10%;
+  top: 40%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.h {
+  left: 65%;
+  top: 5%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+.bub.k {
+  left: 8%;
+  top: 1%;
+  
+  animation: fadeInBottomLeft 2.2s ease ;
+}
+
   .header__right-image  img{
     width: 30rem;
-  
-    border-radius: 50%;
+    border-radius: 5%;
+
   }  
  h1{
   font-size: 3rem;
@@ -1146,8 +1208,8 @@ section.featuers ul.timeline li:nth-child(even) .timebox h4 span {
   }
   .header__right-image  img{
     width: 20rem;
-  
-    border-radius: 50%;
+    border-radius: 5%;
+
   } 
   header{
     height: 130vh;
@@ -1160,8 +1222,8 @@ section.featuers ul.timeline li:nth-child(even) .timebox h4 span {
   }
   .header__right-image  img{
     width: 15rem;
-  
-    border-radius: 50%;
+    border-radius: 5%;
+
   } 
   header{
     height: 130vh;

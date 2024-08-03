@@ -35,7 +35,7 @@ input:focus{
   background: var(--color-primary);
   border-radius: 1rem;
   position: relative;
-  color: black;
+  color: rgb(44, 44, 44);
   width: auto;
   padding: 1.5rem;
   bottom: 0;
