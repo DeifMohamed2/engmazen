@@ -1545,11 +1545,25 @@ const convertToExcelQuiz = async (req, res) => {
   }
 };
 
+
 const changeEnterToQuiz = async (req, res) => {
   try {
     const quizID = req.params.quizID
     const UserId = req.query.UserId
     console.log(QuizId, UserId)
+    const user = await User.findById(UserId);
+    if (!user) {
+      throw new Error('User not found');
+    }
+
+    const quiz = user.quizesInfo.find(q => q._id.equals(QuizId));
+    if (!quiz) {
+      throw new Error('Quiz not found');
+    }
+
+
+    const newTotalScore = user.totalScore - quiz.Score;
+
     User.findOneAndUpdate(
       {
         _id: UserId,
@@ -1565,7 +1579,7 @@ const changeEnterToQuiz = async (req, res) => {
         'quizesInfo.$[elem].answers': [],
         'quizesInfo.$[elem].Score': 0,
         'quizesInfo.$[elem].endTime': null,
-
+        totalScore: newTotalScore,
         
 
 
@@ -1582,6 +1596,7 @@ const changeEnterToQuiz = async (req, res) => {
 
   }
 }
+
 
 // =================================================== END Handle Quizzes ================================================ // 
 
